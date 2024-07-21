@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="utils.Listeners" />
+	</listeners>
+
+	<!-- parallel="classes" -->
+
+	<test thread-count="2" name="Ecommerce Test">
+		<classes>
+			<!-- -->
+
+			<class name="automationTest.EcommerceTestExcel" />
+			<class name="automationTest.EcommerceTestJson" />
+
+		</classes>
+	</test>
+
+	<!-- Test -->
+</suite>
+
+<!-- Suite -->
